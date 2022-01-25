@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="spotify clone.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul>
+            <li id="nav1"><img src="C:/xampp new/htdocs/kavya/spotify images/logo.png" alt="">Spotify</li>
+            <li id="nav2">Home</li>
+            <li id="nav3">About</li>
+        </ul>
+    </nav>
+
+    <div class="list">Songs</div>
+    <div class="container">
+        <div class="songs">
+            <div class="song song1">
+                <p><img id="1" src="C:/xampp new/htdocs/kavya/spotify images/tumse bhi zyada.jpg" alt=""></p>
+                <p id="1">Tumse Bhi Zyada<span id="1">5:19 </span></p>
+            </div>
+
+            <div class="song song2">
+                <p><img id="2" src="C:/xampp new/htdocs/kavya/spotify images/mera yaar.jpg" alt=""></p>
+                <p id="2">Mera Yaar<span id="2">3:12 </span></p>
+            </div>
+
+            <div class="song song3">
+                <p><img id="3" src="C:/xampp new/htdocs/kavya/spotify images/tujhe kitna chahne lage.jpg" alt=""></p>
+                <p id="3">Tujhe Kitna Chane Lage<span id="3">4:44 </span></p>
+            </div>
+
+            <div class="song song4">
+                <p><img id="4" src="C:/xampp new/htdocs/kavya/spotify images/bekhayali.jpg" alt=""></p>
+                <p id="4">Bekhayali<span id="4">6:11 </span></p>
+            </div>
+
+            <div class="song song5">
+                <p><img id="5" src="C:/xampp new/htdocs/kavya/spotify images/let me love you.jpg" alt=""></p>
+                <p id="5">Let Me Love You<span id="5">3:25 </span></p>
+            </div>
+
+            <div class="song song6">
+                <p><img id="6" src="C:/xampp new/htdocs/kavya/spotify images/naatu naatu.jpg" alt=""></p>
+                <p id="6">Naatu Naatu<span id="6">3:28 </span></p>
+            </div>
+
+            <div class="song song7">
+                <p><img id="7" src="C:/xampp new/htdocs/kavya/spotify images/faded.jpg" alt=""></p>
+                <p id="7">Faded<span id="7">3:32 </span></p>
+            </div>
+
+            <div class="song song8">
+                <p><img id="8" src="C:/xampp new/htdocs/kavya/spotify images/jugnu.jpg" alt=""></p>
+                <p id="8">Jugnu<span id="8">3:50 </span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="songPlay">
+        <input type="range" id="progress" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fas fa-2x fa-step-backward" id="prev"></i>
+            <i class="far fa-3x fa-play-circle" id="songPlaying"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songGif"><img src="playing.gif" id="gifOpacity" alt=""> <span id="songTitle">Tumse Bhi Zyada</span></div>
+    </div>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <script src="spotify clone.js"></script>
+</body>
+</html>

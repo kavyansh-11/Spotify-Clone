@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #20252b;
+    font-weight: bold;
+}
+.navigation{
+    margin: 0px;
+    background-color: black;
+    color:white;
+    height:55px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+.navigation ul li{
+    padding:0px 25px;
+}
+.navigation img{
+    width:50px;
+    margin: 0px;
+    padding-right: 5px;
+}
+#nav1{
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+.container{
+    min-height:79vh;
+    background-color: #20252b;
+    color:white;
+    margin:10px 8vw;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.list{
+    padding:5vh 10vw 1vh 11vw;
+    font-size: 30px;
+    coloR:white;
+}
+.songs{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    row-gap: 10vh;
+    column-gap: 4vw;
+}
+.song{
+    cursor:pointer;
+}
+.song img{
+    width:250px;
+    height:250px;
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+.song img:hover{
+    opacity: 0.5;
+}
+.song span{
+    float:right;
+}
+.song:hover{
+    background-image: url("play.png");
+    background-repeat: no-repeat;
+    background-size: 10vh;
+    background-position: center;
+}
+
+
+.songPlay{
+    position:sticky;
+    background-color: black;
+    min-height:1vh;
+    bottom:0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#progress{
+    width:75vw;
+    margin: 15px 0px 10px 0px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+}
+#i2{
+    padding:0px 1vw;
+}
+.songGif{
+    color:white;
+    position:absolute;
+    left:13vw;
+}
+.songGif img{
+    width:35px;
+    opacity: 0;
+    transition:opacity 0.4s ease-in;
+}
+#progress{
+    color: blue;
+}
+
+
+
+@media all and (max-width:750px)
+{
+    .container{
+        min-height:79vh;
+        background-color: #20252b;
+        color:white;
+        margin:0px;
+        padding: 20px 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .list{
+        padding:2vh 10vw 1vh 5vw;
+        font-size: 30px;
+        coloR:white;
+    }
+    .song{
+        background-color: #2b2f35;
+        border-top: 1px solid rgb(117, 120, 122);
+    }
+    .song:last-child{
+        border-bottom: 1px solid rgb(117, 120, 122);
+    }
+    .songs{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        row-gap: 0px;
+        column-gap: 0px;
+        width:100%;
+        
+    }
+    .song{
+        cursor:pointer;
+        width:100%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+        padding: 0.5vh 0px;
+    }
+    .song p:last-child{
+        font-size: 1.2em;
+        padding: 0px 10px;
+        width:100%;
+    }
+    .song img{
+        width:65px;
+        height:65px;
+        border-radius:50%;
+        padding: 0vh 2vw 0vh 2vw;
+    }
+    .song img:hover{
+        opacity: 0.5;
+    }
+    .song span{
+        float:right;
+    }
+    .song:hover{
+        background-image: none;
+    }
+
+    .songPlay{
+        position:sticky;
+        background-color: black;
+        min-height:1vh;
+        bottom:0px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #progress{
+        width:75vw;
+        margin: 15px 0px 10px 0px;
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        color: white;
+    }
+    #i2{
+        padding:0px 1vw;
+    }
+    .songGif{
+        color:white;
+        position: sticky;
+        margin-bottom: 8px;
+        left:0px;
+    }
+    .songGif img{
+        width:35px;
+        opacity: 0;
+        transition:opacity 0.4s ease-in;
+        display: none;
+    }
+    #progress{
+        color: blue;
+    }
+}
